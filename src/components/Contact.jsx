@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div className=" border-neutral-200 dark:border-neutral-800 py-16 px-6">
         <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}

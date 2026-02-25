@@ -1,9 +1,11 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a focus on building intelligent and impactful applications. With hands-on experience in front-end technologies like React and Next.js, and back-end technologies including Node.js, MongoDB, and Firebase, I specialize in developing scalable solutions powered by AI, IoT, and real-time data. My work aims to merge innovation with purpose—enhancing safety, agriculture, and everyday life through technology.`;
+
+export const HERO_CONTENT = `I am a passionate full stack developer with a focus on building intelligent and impactful applications. With hands-on experience in front-end technologies like React and Next.js, and back-end technologies including Node.js, MongoDB, and Firebase, I specialize in developing scalable solutions powered by AI, IoT, and real-time data. My work aims to merge innovation with purpose-enhancing safety, agriculture, and everyday life through technology.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for building impactful and intelligent web and IoT-based applications. With hands-on experience in technologies like React, Node.js, MongoDB, Firebase, and Python, I have developed innovative solutions in the fields of women’s safety, agriculture, and environmental monitoring. My journey into tech began with a desire to solve real-world problems, which has evolved into a drive to create meaningful, user-centered solutions using AI, machine learning, and connected devices. I thrive in collaborative environments, love tackling complex challenges, and continuously explore new technologies to stay ahead. Beyond coding, I enjoy working on socially impactful innovations, prototyping hardware integrations, and contributing to tech communities.`;
 
@@ -38,31 +40,56 @@ export const EXPERIENCES = [
   },
 ];
 
+export const INTERNSHIPS = [
+  {
+    title: "Data Science & Artificial Intelligence",
+    company: "NIT Rourkela",
+    description:
+      "Completed internship focused on Data Science, Machine Learning, NLP and Deep Learning. Built predictive models, performed data preprocessing, and implemented ML algorithms.",
+    technologies: ["Python", "Machine Learning", "NLP", "Deep Learning"],
+  },
+  {
+    title: "MERN Stack Development",
+    company: "Vanurtech Media Pvt Ltd",
+    description:
+      "Worked on full-stack web application development using the MERN stack. Built responsive frontend interfaces, developed backend APIs, and integrated MongoDB databases for real-world applications.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
+  },
+];
+
 export const PROJECTS = [
   {
+  title: "Voice Driven Prescription Generation System",
+  image: project1, // import your image like other projects
+  description:
+    "AI-powered Voice Driven Prescription Generation System that converts doctors' spoken instructions into structured digital prescriptions using advanced Speech-to-Text and Natural Language Processing. The system leverages Whisper AI for accurate transcription, SpaCy for medical entity extraction, and RxNorm validation to correct drug names and dosages. It generates clean, standardized prescriptions, reducing manual errors and improving clinical workflow efficiency.",
+  technologies: ["Python","Whisper AI","SpaCy NLP","RxNorm","Streamlit","Flask"],
+},
+
+  {
     title: "Potato Leaf Disease Prediction System",
-    image: project1,
+    image: project2,
     description:
       "AI-Driven Potato Leaf Disease Prediction System is a smart solution that uses image processing and machine learning to detect and classify potato leaf diseases like Early Blight and Late Blight. It helps farmers take timely action to prevent crop loss, improve yield, and promote sustainable farming through AI-powered precision agriculture.",
     technologies: ["HTML", "CSS", "JavaScript", "Flask", "OpenCV", "Python", "Tensorflow"],
   },
   {
     title: "IoT-Based Weather Prediction System ",
-    image: project2,
+    image: project3,
     description:
       "Built an IoT‐based weather prediction system using sensors like DHT11, BMP180, and a rain sensor for real‐ time data collection. The ARIMA model provides accurate forecasts, displayed on a user‐friendly interface. Integrated with an ESP8266 module, it ensures seamless cloud data transmission for remote monitoring and reliable weather updates. ",
     technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
   },
   {
     title: "Women Safety App",
-    image: project3,
+    image: project4,
     description:
       "Developed a women’s safety app that allows users to report unsafe areas and send emergency alerts. It features a dynamic heatmap, panic button, and real‐time location sharing. The app enhances community safety with GPS and notifications, providing a reliable, user‐friendly solution to ensure personal security and awareness. ",
     technologies: ["Kotlin", "Node.js", "Google Maps API"],
   },
   {
     title: "Online Voting System",
-    image: project4,
+    image: project5,
     description:
       "An online voting system allows secure digital voting with features like voter authentication, role‐based access, and encrypted, anonymous votes. Admins can manage elections and view results. Built with HTML, CSS, JavaScript, and secure backend frameworks, it ensures efficiency, transparency, and robust security to prevent tampering and ensure integrity. ",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
