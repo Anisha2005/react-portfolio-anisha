@@ -19,18 +19,16 @@ const Navbar = () => {
       setTheme(savedTheme);
       document.documentElement.classList.toggle("dark", savedTheme === "dark");
     } else {
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-
-      const defaultTheme = prefersDark ? "dark" : "light";
-      setTheme(defaultTheme);
-      document.documentElement.classList.toggle("dark", prefersDark);
+      // ✅ Force default dark theme
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
     }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
+
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.toggle("dark", newTheme === "dark");
