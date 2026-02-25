@@ -40,11 +40,11 @@ const Navbar = () => {
       <img src={logo} alt="logo" className="w-10" />
 
       <div className="flex items-center gap-6 text-2xl text-neutral-700 dark:text-neutral-300">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/anisha-pradhan-b2765024b" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="hover:text-blue-500 transition" />
         </a>
 
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Anisha2005" target="_blank" rel="noopener noreferrer">
           <FaGithub className="hover:text-gray-500 transition" />
         </a>
 
