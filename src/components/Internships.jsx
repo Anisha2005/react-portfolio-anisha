@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import nitImage from "../assets/internships/nit.jpg";
-import vanurtechImage from "../assets/internships/vanurtech.jpg";
+import nitImage from "../assets/Internships/nit.jpg";
+import vanurtechImage from "../assets/Internships/vanurtech.jpg";
 
 const Internship = () => {
   return (
